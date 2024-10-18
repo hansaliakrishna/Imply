@@ -24,3 +24,5 @@ Command Parameters:
 -table : Data source name in Polaris
 -timestampfield : timestamp field name in your source data that you want to map to __time in Imply data source
 ```
+
+##Note: We haven't considered any kind of transformations while ingesting the data. It will take the columns from source data file and will create an equivalent column in Polaris Data Source.
