@@ -9,6 +9,10 @@ Have Schema Auto Discovery before invoking Ingestion API in Polaris for Batch In
 python3 schema_auto_discovery_and_data_ingestion_v4.py -org 'imply-sa' -reg 'us-east-1' -cloud 'aws' -project 'bd4a31ca-06c2-45bc-a7de-bac8a5320483' -source_type 'azure' -con 'community_contribution_kh' -isURI_or_isObject 'uris' -objects "['azureStorage://schemaautodiscoverydemo/demo/world_country_and_usa_states_latitude_and_longitude_values_1.csv','azureStorage://schemaautodiscoverydemo/demo/world_country_and_usa_states_latitude_and_longitude_values_2.csv']" -fileformat 'csv' -table 'wc-azure' -timestampfield 'created_at'
 ```
 
+```
+python3 schema_auto_discovery_and_data_ingestion_v4.py -org 'imply-sa' -reg 'us-east-1' -cloud 'aws' -project 'bd4a31ca-06c2-45bc-a7de-bac8a5320483' -source_type 's3' -con 'krish-s3' -isURI_or_isObject 'objects' -objects "['azureStorage://schemaautodiscoverydemo/demo/world_country_and_usa_states_latitude_and_longitude_values_1.csv','azureStorage://schemaautodiscoverydemo/demo/world_country_and_usa_states_latitude_and_longitude_values_2.csv']" -fileformat 'csv' -table 'wc-s3' -timestampfield 'created_at'
+```
+
 Command Parameters:
 
 ```
